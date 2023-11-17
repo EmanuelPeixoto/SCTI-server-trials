@@ -69,7 +69,6 @@ func dashboard(w http.ResponseWriter, r *http.Request){
         index = i
 			} 
 		}
-		fmt.Printf("index: %d", index)
 		Pessoas = append(Pessoas[:index], Pessoas[index+1:]...)
 	default:
 		fmt.Printf("Código falhou miseravelmente")
